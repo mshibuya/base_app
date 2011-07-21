@@ -1,4 +1,6 @@
 BaseApp::Application.routes.draw do
+  resources :image_tests
+
   devise_for :admins
 
   # The priority is based upon order of creation:

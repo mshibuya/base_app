@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mshibuya/acts_as_image_store.git
-  revision: 2f9fe858ba3c6520873815f24e6de915f4449448
+  revision: ccba09aa1609b427e543d41624a8556abc5461cc
   specs:
     acts_as_image_store (0.0.1)
       nokogiri
