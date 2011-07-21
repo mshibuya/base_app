@@ -1,0 +1,21 @@
+development:
+  reproxy:  false
+  base_url: /images/
+  mount_at: /images/
+  storage:
+    adapter:  database
+  cache:
+    adapter: file_system
+
+test:
+  reproxy:  false
+#  cache:    86400
+#  perlbal:  192.168.11.69
+  base_url: 'http://image.example.com/images/'
+  mount_at: /images/
+  secret:   xxx
+  storage:
+    adapter:  database
+  cache:
+    adapter:  file_system
+
