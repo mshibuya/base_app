@@ -20,11 +20,12 @@ gem 'ruby-debug19', :require => 'ruby-debug'
 
 gem 'nokogiri'
 gem 'rmagick', :require => 'RMagick'
-gem 'acts_as_image_store', :git => 'git://github.com/mshibuya/acts_as_image_store.git'
 gem 'aws-s3', :require => 'aws/s3'
+gem 'acts_as_image_store', :git => 'git://github.com/mshibuya/acts_as_image_store.git'
+#gem 'acts_as_image_store', :path => '../acts_as_image_store/'
 
 gem 'devise' # Devise must be required before RailsAdmin
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch => :stable
 
 group :development, :test do
   gem 'rspec-rails'
