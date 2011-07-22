@@ -1,0 +1,11 @@
+= Rails3 ベースアプリケーション
+今後のRailsでの開発に向けて基本となるアプリケーションです。
+
+== 初期設定について
+
+=== 初期ユーザの作り方
+
+  $ rails console
+  > Admin.create :email => 'test@example.com', :password => 'abcdefg'
+
+

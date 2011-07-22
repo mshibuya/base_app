@@ -1,0 +1,62 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  home:
+    name: "Home"
+  admin:
+    dashboard:
+      pagename: "サイト管理"
+      name: "Dashboard"
+      model_name: "Model名"
+      last_used: "Last used"
+      records: "Records"
+      modify: "変更"
+      add_new: "新規作成"
+      show: "Show"
+      ago: "ago"
+    history:
+      name: "履歴"
+      page_name: "%{name}の履歴"
+      no_activity: "該当なし"
+    credentials:
+      log_out: "Log out"
+    list:
+      edit_action: "編集"
+      delete_action: "削除"
+      select_action: "選択"
+      delete_selected: "選択を削除"
+      add_new: "新規作成"
+      search: "検索"
+      select: "編集する%{name}を選択"
+      show_all: "全て表示"
+    new:
+      basic_info: "基本情報"
+      required: "必須"
+      optional: "任意"
+      one_char: "文字."
+      many_chars: "文字以下"
+      chosen: "選択された%{name}"
+      select_choice: "クリックで選択"
+      chose_all: "全て選択"
+      clear_all: "選択をクリア"
+      up: "Up"
+      down: "Down"
+      save: "保存"
+      save_and_add_another: "保存して次を作成"
+      save_and_edit: "保存して編集を続ける"
+      cancel: "Cancel"
+    delete:
+      flash_confirmation: "%{name}を削除しました"
+      confirmation: "続行する"
+    flash:
+      successful: "%{name} was successfully %{action}"
+      error: "%{name} failed to be %{action}"
+      noaction: "No actions were taken"
+    actions:
+      create: "create"
+      created: "created"
+      update: "update"
+      updated: "updated"
+      delete: "delete"
+      deleted: "deleted"
