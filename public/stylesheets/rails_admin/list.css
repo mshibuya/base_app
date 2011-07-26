@@ -125,3 +125,17 @@
 .historyLink:hover {
   text-decoration:underline;
 }
+
+.position {
+  width: 80px;
+}
+
+div.handle {
+  width:100%;
+  height:100%;
+  cursor:move;
+}
+
+div.handle .ui-icon{
+  margin:auto;
+}

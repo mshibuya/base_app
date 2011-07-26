@@ -59,4 +59,9 @@ BaseApp::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
+  scope "admin", :module => :rails_admin, :as => "rails_admin" do
+    controller "user" do
+      post "/:model_name/reorder", :to => :reorder, :as => "reorder"
+    end
+  end
 end
