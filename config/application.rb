@@ -38,5 +38,11 @@ module BaseApp
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
+
+    # jpmobile
+    unless Rails.env == "test"
+      config.jpmobile.mobile_filter
+      config.jpmobile.form_accept_charset_conversion = true
+    end
   end
 end

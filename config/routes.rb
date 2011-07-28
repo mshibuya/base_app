@@ -1,5 +1,16 @@
 BaseApp::Application.routes.draw do
+=begin
+  ## for module-based routing
+  constraints(:subdomain => /^(www)?$/) do
+    resources :image_tests
+  end
+  scope :module => 'mobile', :as => 'mobile', :constraints => {:subdomain => 'm'} do
+    resources :image_tests
+  end
+  root :to => "image_tests#index"
+=end
   resources :image_tests
+  root :to => "image_tests#index"
 
   devise_for :admins
 
@@ -52,7 +63,6 @@ BaseApp::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "image_tests#index"
 
   # See how all your routes lay out with "rake routes"
 

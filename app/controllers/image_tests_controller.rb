@@ -81,4 +81,8 @@ class ImageTestsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  def edit_mobile
+    edit
+  end
 end

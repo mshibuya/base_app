@@ -24,6 +24,9 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch =>
 gem 'acts_as_list'
 gem 'holidays'
 
+gem 'jpmobile'
+gem 'jpmobile-ipaddresses'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'ruby-debug19', :require => 'ruby-debug'
