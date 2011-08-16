@@ -28,7 +28,7 @@ RailsAdmin.config do |config|
 
   config.model ImageTest do
     field :name
-    field :body
+    field :body, :emoji_text
     field :image, :image
   end
 end

@@ -27,6 +27,8 @@ gem 'holidays'
 gem 'jpmobile'
 gem 'jpmobile-ipaddresses'
 
+gem 'typecast_emoji', :path => '../typecast_emoji/'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'ruby-debug19', :require => 'ruby-debug'
