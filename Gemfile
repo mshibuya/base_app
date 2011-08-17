@@ -20,7 +20,7 @@ gem 'aws-s3', :require => 'aws/s3'
 gem 'acts_as_image_store', :git => 'git://github.com/mshibuya/acts_as_image_store.git'
 #gem 'acts_as_image_store', :path => '../acts_as_image_store/'
 gem 'devise' # Devise must be required before RailsAdmin
-gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git', :branch => :stable
+gem 'rails_admin', :git => 'git://github.com/mshibuya/rails_admin.git', :branch => 'my-stable'
 gem 'acts_as_list'
 gem 'holidays'
 

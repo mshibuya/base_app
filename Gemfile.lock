@@ -8,9 +8,9 @@ GIT
       rmagick
 
 GIT
-  remote: git://github.com/sferik/rails_admin.git
-  revision: d77d636c6334d807cd18213c51743383924a4774
-  branch: stable
+  remote: git://github.com/mshibuya/rails_admin.git
+  revision: b3af8688ed76da27fdb0ddef467b0ca70cf85d14
+  branch: my-stable
   specs:
     rails_admin (0.0.1)
       builder (~> 2.1.0)
