@@ -1,20 +1,20 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
+ja:
   home:
     name: "Home"
   admin:
     dashboard:
       pagename: "サイト管理"
-      name: "Dashboard"
+      name: "ダッシュボード"
       model_name: "Model名"
-      last_used: "Last used"
-      records: "Records"
+      last_used: "最終アクセス日時"
+      records: "レコード"
       modify: "変更"
       add_new: "新規作成"
-      show: "Show"
-      ago: "ago"
+      show: "詳細"
+      ago: "前"
     history:
       name: "履歴"
       page_name: "%{name}の履歴"
@@ -25,11 +25,14 @@ en:
       edit_action: "編集"
       delete_action: "削除"
       select_action: "選択"
+      export_action: "エクスポート"
+      export_selected: "選択をエクスポート"
       delete_selected: "選択を削除"
       add_new: "新規作成"
       search: "検索"
       select: "編集する%{name}を選択"
       show_all: "全て表示"
+      add_filter: "絞り込み"
     new:
       basic_info: "基本情報"
       required: "必須"
@@ -47,16 +50,39 @@ en:
       save_and_edit: "保存して編集を続ける"
       cancel: "Cancel"
     delete:
-      flash_confirmation: "%{name}を削除しました"
-      confirmation: "続行する"
+      all_of_the_following_related_items_will_be_deleted: "以下の関連項目が全て削除されます："
+      are_you_sure_you_want_to_delete_the_object: "%{model_name}を削除してよろしいですか？"
+      confirmation: "削除する"
+      delete_confirmation: "削除の確認"
+    export:
+      confirmation: "Export to %{name}"
+      select: "Select fields to export"
+      fields_from: "Fields from %{name}"
+      fields_from_associated: "Fields from associated %{name}"
+      display: "Display %{name}: %{type}"
+      options_for: "Options for %{name}"
+      empty_value_for_associated_objects: "<empty>"
+      csv:
+        header_for_root_methods: "%{name}" # 'model' is available
+        header_for_association_methods: "%{name} [%{association}]"
+        encoding_to: "Encode to"
+        encoding_to_help: "Choose output encoding. Leave empty to let current input encoding untouched: (%{name})"
+        skip_header: "No header"
+        skip_header_help: "Do not output a header (no fields description)"
+        default_col_sep: ","
+        col_sep: "Column separator"
+        col_sep_help: "Leave blank for default ('%{value}')" # value is default_col_sep
     flash:
-      successful: "%{name} was successfully %{action}"
-      error: "%{name} failed to be %{action}"
-      noaction: "No actions were taken"
+      successful: "%{name}を%{action}しました。"
+      error: "%{name}は%{action}できませんでした。"
+      noaction: "変更はありません。"
     actions:
-      create: "create"
-      created: "created"
-      update: "update"
-      updated: "updated"
-      delete: "delete"
-      deleted: "deleted"
+      create: "作成"
+      created: "作成日時"
+      update: "更新"
+      updated: "更新日時"
+      delete: "削除"
+      deleted: "削除日時"
+      export: "エクスポート"
+      exported: "エクスポート日時"
+            
