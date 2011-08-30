@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery :secret => '30979744578fc7569652c51a4e91437152a4e811e2de58c8202b86eef1672310a7a983712ec1ddcab2c5e1bbb000c29a07316a7fcd4e02b2c3dc1d335cf3c6af'
 
   include JquerySortable::ApplicationController
+  include UrlHelper
 
   before_filter :redirect_if_mobile
   before_filter :route_action_for_mobile
