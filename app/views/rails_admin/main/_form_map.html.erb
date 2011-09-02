@@ -1,0 +1,22 @@
+<% head_javascript 'http://maps.google.com/maps/api/js?sensor=false' %>
+<% head_javascript 'map_form' %>
+
+<% if rails_admin %>
+  <div class="field <%=object_name %>_<%= field_name %>">
+    <label><%= label_name || field_name.to_s.camelize %></label>
+<% end %>
+
+    <div id="<%= object_name %>_<%= field_name %>">
+      <div class="map" style="<%= try(:style) || 'width:600px;height:400px' %>"></div>
+      <input type="hidden" class="lat" name="<%= object_name %>[lat]" value="<%= lat || 35.689649 %>" />
+      <input type="hidden" class="lng" name="<%= object_name %>[lng]" value="<%= lng || 139.691162 %>" />
+      <script>
+        jQuery(function(){
+          jQuery('#<%= object_name %>_<%= field_name %>').mapForm();
+        });
+      </script>
+    </div>
+
+<% if rails_admin %>
+  </div>
+<% end %>
