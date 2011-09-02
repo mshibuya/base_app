@@ -7,7 +7,7 @@
 <% end %>
 
     <div id="<%= object_name %>_<%= field_name %>">
-      <div class="map" style="<%= try(:style) || 'width:600px;height:400px' %>"></div>
+      <div class="map" style="<%= style || 'width:600px;height:400px' %>"></div>
       <input type="hidden" class="lat" name="<%= object_name %>[lat]" value="<%= lat || 35.689649 %>" />
       <input type="hidden" class="lng" name="<%= object_name %>[lng]" value="<%= lng || 139.691162 %>" />
       <script>
