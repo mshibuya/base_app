@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/mshibuya/acts_as_image_store.git
-  revision: 679ed4d67517249835ecabcc89df689c5012ff53
+  revision: c079e6d6bfa8140683ae58343a86549e695d2bff
   specs:
     acts_as_image_store (0.0.1)
       nokogiri
@@ -111,7 +111,7 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.4)
     rake (0.9.2)
-    rdoc (3.9.3)
+    rdoc (3.9.4)
     rmagick (2.13.1)
     rspec (2.6.0)
       rspec-core (~> 2.6.0)

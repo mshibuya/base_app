@@ -13,13 +13,13 @@ gem 'jquery-rails'
 # Deploy with Capistrano
 # gem 'capistrano'
 
+gem 'devise' # Devise must be required before RailsAdmin
+gem 'rails_admin', :git => 'git://github.com/mshibuya/rails_admin.git', :branch => 'my-stable'
 
 gem 'nokogiri'
 gem 'rmagick', :require => 'RMagick'
 gem 'aws-s3', :require => 'aws/s3'
 gem 'acts_as_image_store', :git => 'git://github.com/mshibuya/acts_as_image_store.git'
-gem 'devise' # Devise must be required before RailsAdmin
-gem 'rails_admin', :git => 'git://github.com/mshibuya/rails_admin.git', :branch => 'my-stable'
 gem 'acts_as_list'
 gem 'holidays'
 
