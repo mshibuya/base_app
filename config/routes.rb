@@ -71,7 +71,7 @@ BaseApp::Application.routes.draw do
   # match ':controller(/:action(/:id(.:format)))'
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
   scope "admin", :module => :rails_admin, :as => "rails_admin" do
-    controller "user" do
+    controller "user", :as => 'user' do
       post "/:model_name/reorder", :to => :reorder, :as => "reorder"
     end
   end

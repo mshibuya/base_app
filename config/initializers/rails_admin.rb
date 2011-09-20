@@ -4,6 +4,12 @@ RailsAdmin::MainController.class_eval do
   jquery_sortable
 end
 
+RailsAdmin::Engine.routes.append do
+  controller "user" do
+    post "/:model_name/reorder", :to => :reorder, :as => "reorder"
+  end
+end
+
 RailsAdmin.config do |config|
   config.model ImageTest do
     field :name
@@ -30,5 +36,9 @@ RailsAdmin.config do |config|
     end
     field :id
     field :name
+  end
+
+  config.model StoredImage do
+    visible false
   end
 end

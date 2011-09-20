@@ -1,4 +1,22 @@
 GIT
+  remote: git://github.com/mshibuya/acts_as_image_store.git
+  revision: d234d5e3510618bb3807db633ef4c29d449e7a53
+  specs:
+    acts_as_image_store (0.0.1)
+      nokogiri
+      rails (>= 3.0.0)
+      rmagick
+
+GIT
+  remote: git://github.com/mshibuya/emoji_palette.git
+  revision: b4af53b65c1b18c4c1f919a86625965079edb0b8
+  specs:
+    emoji_palette (0.0.1)
+      actionpack (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      jpmobile (>= 1.0.0)
+
+GIT
   remote: git://github.com/sferik/rails_admin.git
   revision: d57c7e59a330a2fbd604970715bcacbaaf9afc9d
   specs:
@@ -6,22 +24,6 @@ GIT
       builder (~> 3.0.0)
       haml (>= 3.1.0, < 3.3.0)
       rails (~> 3.1.0)
-
-PATH
-  remote: ../acts_as_image_store/
-  specs:
-    acts_as_image_store (0.0.1)
-      nokogiri
-      rails (>= 3.0.0)
-      rmagick
-
-PATH
-  remote: ../emoji_palette/
-  specs:
-    emoji_palette (0.0.1)
-      actionpack (>= 3.0.0)
-      activesupport (>= 3.0.0)
-      jpmobile (>= 1.0.0)
 
 GEM
   remote: http://rubygems.org/

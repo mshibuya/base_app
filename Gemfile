@@ -18,16 +18,14 @@ gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
 
 gem 'nokogiri'
 gem 'rmagick', :require => 'RMagick'
-#gem 'acts_as_image_store', :git => 'git://github.com/mshibuya/acts_as_image_store.git'
-gem 'acts_as_image_store', :path => '../acts_as_image_store/'
+gem 'acts_as_image_store', :git => 'git://github.com/mshibuya/acts_as_image_store.git'
 gem 'acts_as_list'
 gem 'holidays'
 
 gem 'jpmobile'
 gem 'jpmobile-ipaddresses'
 
-#gem 'emoji_palette', :git => 'git://github.com/mshibuya/emoji_palette.git'
-gem 'emoji_palette', :path => '../emoji_palette/'
+gem 'emoji_palette', :git => 'git://github.com/mshibuya/emoji_palette.git'
 
 group :development, :test do
   gem 'rspec-rails'
