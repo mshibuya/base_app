@@ -1,4 +1,8 @@
 BaseApp::Application.routes.draw do
+  devise_for :admins
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
 =begin
   ## for module-based routing
   constraints(:subdomain => /^(www)?$/) do
@@ -9,10 +13,9 @@ BaseApp::Application.routes.draw do
   end
   root :to => "image_tests#index"
 =end
+
   resources :image_tests
   root :to => "image_tests#index"
-
-  devise_for :admins
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -69,10 +72,4 @@ BaseApp::Application.routes.draw do
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
   # match ':controller(/:action(/:id(.:format)))'
-  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
-  scope "admin", :module => :rails_admin, :as => "rails_admin" do
-    controller "user", :as => 'user' do
-      post "/:model_name/reorder", :to => :reorder, :as => "reorder"
-    end
-  end
 end
