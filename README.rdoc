@@ -8,4 +8,20 @@
   $ rails console
   > Admin.create :email => 'test@example.com', :password => 'abcdefg'
 
+=== db:migrateやdb:schema:loadでエラーが出る時
+
+  $ rake db:schema:load
+  
+  rake aborted!
+  Mysql2::Error: Table 'base_app_dev2.image_tests' doesn't exist: SHOW FIELDS FROM `image_tests`
+
+現在のRailsAdminの制限により、モデルに対応するテーブルを作る前にモデルが参照されてしまい、テーブルが存在しないためエラーになります。
+回避するには
+  
+  $ mv config/initializers/rails_admin.rb config/initializers/rails_admin.rb.bak
+  $ rake db:schema:load
+  $ mv config/initializers/rails_admin.rb.bak config/initializers/rails_admin.rb
+
+などとやって、rails_adminのinitializerが一時的に読まれなくなるようにしてください。
+
 
