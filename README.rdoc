@@ -24,4 +24,8 @@
 
 などとやって、rails_adminのinitializerが一時的に読まれなくなるようにしてください。
 
+=== ほげ
+
+  hoge
+  mage
 
